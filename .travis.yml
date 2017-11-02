@@ -17,4 +17,4 @@ before_script:
 - wget --no-check-certificate -P inc/GL/ http://www.opengl.org/registry/api/GL/glcorearb.h
 script:
 - make
-- make all -j2
+- make all
