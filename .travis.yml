@@ -2,7 +2,7 @@ sudo: false
 language: cpp
 matrix:
   include:
-  - env: GCC_VERSION=5 GL_INCLUDEPATH=inc/GL
+  - env: GCC_VERSION=5 GL_INCLUDEPATH=inc
     os: linux
     compiler: g++-5
     addons:
