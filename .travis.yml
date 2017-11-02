@@ -1,0 +1,16 @@
+sudo: false
+language: cpp
+matrix:
+  include:
+  - env: GCC_VERSION=5
+    os: linux
+    compiler: g++-5
+    addons:
+      apt:
+        sources:
+        - ubuntu-toolchain-r-test
+        packages:
+        - g++-5
+before_script:
+script:
+- make all
