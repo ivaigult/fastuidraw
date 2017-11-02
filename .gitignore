@@ -12,6 +12,7 @@ inc/fastuidraw/gl_backend/ngl_gles3.hpp
 src/fastuidraw/gl_backend/ngl_gles3.cpp
 inc/fastuidraw/ngl_egl.hpp
 src/fastuidraw/ngl_egl.cpp
+inc/GL/*
 
 *-GL-release
 *-GL-debug

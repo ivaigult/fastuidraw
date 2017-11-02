@@ -2,7 +2,7 @@ sudo: false
 language: cpp
 matrix:
   include:
-  - env: GCC_VERSION=5 GL_INCLUDEPATH=build/include/GL
+  - env: GCC_VERSION=5 GL_INCLUDEPATH=inc/GL
     os: linux
     compiler: g++-5
     addons:
@@ -13,7 +13,7 @@ matrix:
         - g++-5
         - libgles2-mesa-dev
 before_script:
-- mkdir -p build/include/GL/
-- wget --no-check-certificate -P build/include/GL/ http://www.opengl.org/registry/api/GL/glcorearb.h
+- mkdir -p inc/GL/
+- wget --no-check-certificate -P inc/GL/ http://www.opengl.org/registry/api/GL/glcorearb.h
 script:
 - make all
