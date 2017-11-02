@@ -1,8 +1,5 @@
 sudo: false
 language: cpp
-addons:
-  packages:
-  - libgles2-mesa-dev
 matrix:
   include:
   - env: GCC_VERSION=5 CPPFLAGS=-Ibuild/include/
@@ -14,6 +11,7 @@ matrix:
         - ubuntu-toolchain-r-test
         packages:
         - g++-5
+        - libgles2-mesa-dev
 before_script:
 - mkdir -p build/include/GL/
 - wget --no-check-certificate -P build/include/GL/ http://www.opengl.org/registry/api/GL/glcorearb.h
