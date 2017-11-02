@@ -11,7 +11,7 @@ FASTUIDRAW_release_CFLAGS = $(FASTUIDRAW_DEPENDS_CFLAGS) $(FASTUIDRAW_release_BA
 FASTUIDRAW_BUILD_debug_FLAGS = -g
 FASTUIDRAW_BUILD_release_FLAGS = -O3 -fstrict-aliasing
 FASTUIDRAW_BUILD_WARN_FLAGS = -Wall -Wextra -Wcast-qual -Wwrite-strings
-FASTUIDRAW_BUILD_INCLUDES_CFLAGS = -Iinc
+FASTUIDRAW_BUILD_INCLUDES_CFLAGS = -Iinc -Ibuild/include
 
 #
 #  STRING_RESOURCE_CC inputfile resourcename outputpath
