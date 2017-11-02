@@ -16,4 +16,5 @@ before_script:
 - mkdir -p inc/GL/
 - wget --no-check-certificate -P inc/GL/ http://www.opengl.org/registry/api/GL/glcorearb.h
 script:
-- make all
+- make
+- make all -j2
