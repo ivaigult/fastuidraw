@@ -12,6 +12,7 @@ matrix:
         packages:
         - g++-5
         - libgles2-mesa-dev
+        - mesa-common-dev
 before_script:
 script:
 - make all
